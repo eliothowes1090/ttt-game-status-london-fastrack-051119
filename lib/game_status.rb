@@ -58,7 +58,3 @@ def winner(board)
     end
 end
 
-  # if over?(board) && (won?(board)[0] && won?(board)[1] && won?(board)[2] == "X")
-  #   return "X"
-  # end
-end
