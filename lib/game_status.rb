@@ -46,14 +46,14 @@ def over?(board)
 end
 
 def winner(board)
-  position_1 = won?(board)[0]
-  position_2 = won?(board)[1]
-  position_3 = won?(board)[2]
+  # position_1 = won?(board)[0]
+  # position_2 = won?(board)[1]
+  # position_3 = won?(board)[2]
     if draw?(board) == true
       return nil
-    elsif board[position_1] && board[position_2] && board[position_3] == "X"
+    elsif board[won?(board)[0]] && board[won?(board)[1]] && board[won?(board)[2]] == "X"
       return "X"
-    elsif board[position_1] && board[position_2] && board[position_3] == "O"
+    elsif board[won?(board)[0]] && board[won?(board)[1]] && board[won?(board)[2]] == "O"
       return "O"
     end
 end
