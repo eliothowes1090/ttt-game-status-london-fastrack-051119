@@ -51,7 +51,7 @@ def winner(board)
   # position_3 = won?(board)[2]
     # if over?(board) && !won?(board)
     #   return nil
-  if draw?(board)
+  if !won(board)
       return nil
   elsif board[won?(board)[0]] && board[won?(board)[1]] && board[won?(board)[2]] == "X"
       return "X"
