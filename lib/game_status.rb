@@ -54,6 +54,8 @@ position_2 = won?(board)[1]
 position_3 = won?(board)[2]
 if board[position_1] && board[position_2] && board[position_3] == "X"
   return "X"
+elsif board[position_1] && board[position_2] && board[position_3] == "O"
+  return "O"
 end
 
   # if over?(board) && (won?(board)[0] && won?(board)[1] && won?(board)[2] == "X")
